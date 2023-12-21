@@ -1,0 +1,112 @@
+* {
+  font-family: "Maven Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+}
+
+body {
+  /*remover
+  background-color: #718b6d;
+  */
+}
+/*Leandro*/
+.back {
+  /*border: 3px solid green;*/
+  background-image: linear-gradient(-45deg, #173f73, #153259, #152840, #0d0d0d);
+  background-attachment: fixed;
+}
+/*Leandro*/
+main {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/*Leandro*/
+.titulo-cadastro {
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #172b4d;
+  margin-left: 100px;
+}
+
+/*
+header {
+  background-color: #d3d3d3b7;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+*/
+
+/*Leandro*/
+header {
+  /*border: 3px solid pink;*/
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/*Leandro*/
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  height: 60px;
+  border-radius: 10px 10px 0px 0px;
+}
+/*Leandro*/
+.navi {
+  /*estilizando os elementos do nav*/
+  display: flex;
+  list-style: none;
+  /*remove as bolinhas dos marcadores da lista*/
+  gap: 30px;
+  /*adiciona espaço entre os elementos*/
+  align-items: center;
+  font-weight: bold;
+  color: #172b4d;
+}
+
+.section-formulario {
+  padding: 100px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  align-items: center;
+  box-sizing: border-box;
+}
+/*LEandro*/
+.cadastro {
+  /*border: 1px solid red;*/
+  color: #ffffff;
+  padding: 100px;
+  width: 600px;
+}
+/*remover
+ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+*/
+/*Leandro*/
+.footer-margin {
+  padding: 5px;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+/*Leandro*/
+footer {
+  /*desenha area do footer para se destacar do fundo */
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 0px 0px 10px 10px;
+  background: #ffffff;
+}

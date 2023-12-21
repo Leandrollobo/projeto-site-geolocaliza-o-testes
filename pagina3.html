@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--Abaixo inseri link para uso da fonte ROBOTO-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styleprototype3.css" />
+    <script src="./pagina3.js" async defer></script>
+
+    <!---Script para botão de centralizar na localização do usuario-->
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0mfBGvXeOgy3-ykjehV4E0Sygn__RlIc&callback=initMap&v=weekly"
+    defer
+  ></script>
+
+  <!---Inicializa a biblioteca Places do google-->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0mfBGvXeOgy3-ykjehV4E0Sygn__RlIc&libraries=places&callback=initMap">
+</script>
+
+
+    <title>Pagina 3</title>
+  </head>
+
+  <body>
+    <div class="back">
+      <div class="titulo-principal">
+        <h1>
+          <img src="./assets/edit_location_alt_svg.svg" class="titleimg" />
+          Guia completo para otimizar suas listas de compras
+        </h1>
+      </div>
+
+      <header>
+
+        <nav>
+          <ul class="navi">
+            <li>Cadastro</li>
+            <li>Listas</li>
+            <li>
+              <img
+                src="./assets/logo.png"
+                alt="Logotipo do site"
+                width="60"
+              />
+            </li>
+            <li><a href=guia.html>Recursos</a></li>
+            <li><a href="avaliacoes.html">Avaliações</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="user-info">
+        <div>
+          <div>###Exibir nome do usuario###</div>
+          <div>#Caixa de Notificações#</div>
+        </div>
+      </section>
+
+    <main>
+      <h2>Bem vindo!</h2>
+
+      <section>
+        <div>
+          #Quadro flutuante com botões: -Criar listas -Exibir listas -Excluir
+          listas -Alterar listas
+        </div>
+      </section>
+
+      <section>
+        <div>#Exibir Localização usuario</div>
+      </section>
+
+    <!----EXIBIÇÃO DE UM MAPA TESTE CENTRALIZADO EM ZONASUL - SÃO PAULO-->
+      <section>
+        <h3>Google Maps TEST</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- prettier-ignore -->
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyC0mfBGvXeOgy3-ykjehV4E0Sygn__RlIc", v: "beta"});</script>
+
+      </section>
+    </main>
+
+    <footer>
+      <img src="#" alt="Logotipo do site: " />
+      <nav>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
