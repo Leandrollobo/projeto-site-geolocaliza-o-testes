@@ -3,33 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-family: Charl;
-  /*definindo a fonte padrão para todo texto dentro do body da pagina*/
+  /*box sizing o tamanho total do elemento é calculado incluindo o preenchimento e a borda, mas excluindo as margens. Isso significa que: o tamanho que for definido para largura e altura do elemento incluirá o preenchimento e a borda, e o conteúdo interno não será dimensionado além desse tamanho.*/
 }
 
 .back {
   /*border: 3px solid green;*/
   background-image: linear-gradient(-45deg, #173F73, #153259, #152840, #0D0D0D);
   background-attachment: fixed;
-}
-
-.titulo-principal {
-  padding-top: 5rem;
-  padding-left: 7rem;
-  padding-right: 0rem;
-  padding-bottom: 2rem;
-  width: 600px;
-}
-
-header {
-  /*border: 3px solid pink;*/
-   margin-top: 10px;
-   margin-left: 100px;
-   margin-right: 100px;
+  padding-bottom: 20px; /*adiciona um padding na div de background para que o quadro branco fique flutuante sem enconsta na borda da tela
 }
 
 /* Remove a linha abaixo de hiperlnks e define a cor padrão para os links*/
@@ -38,8 +19,13 @@ a{
   color: #172B4D;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: Charl;
+  /*definindo a fonte padrão para todo texto dentro do body da pagina*/
+}
+
 nav {
-  /*border: 1px solid blue;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,33 +36,26 @@ nav {
 }
 
 .navi {
-  /*border: 1px solid green;*/
   /*estilizando os elementos do nav*/
   display: flex;
   list-style: none;
   /*remove as bolinhas dos marcadores da lista*/
   gap: 30px;
   /*adiciona espaço entre os elementos*/
-  align-items:flex-end;
+  align-items: center;
   font-weight: bold;
   color: #172B4D;
 }
 
-.user-info {
-  /*border: 1px solid red;*/
-  display: flex;
-  background-color: #ffffff;
-  flex-direction: column;
-  align-items: flex-end; /* Alinha os itens à direita da div */
-  justify-content: center;
-  margin-left: 100px;
-  margin-right: 100px;
+header {
+/*border: 3px solid pink;*/
+ margin-top: 10px;
+ margin-left: 100px;
+ margin-right: 100px;
+
 }
 
-
-
 main {
-  background-color: #ffffff;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -86,23 +65,26 @@ h1 {
   color: #ffffff;
 }
 
-h2 {
-  font-size: 46px;
-  color: #777;
-  padding-top: 0rem;
-  padding-left: 5rem;
-  padding-right: 0rem;
-  padding-bottom: 0rem;
+.titulo-principal {
+  /*border: 1px solid green;*/
+  padding: 20px;
+  margin-left: 100px;
   width: 600px;
 }
 
+
+.img-dinamica {
+  /*border: 3px solid red;*/
+  background-image: url(/assets/topland.png);
+  background-size: cover;
+  height: 600px;
+}
 
 .h2caption {
   /*border: 1px solid red;*/
   color: #ffffff;
   padding: 100px;
   width: 600px;
-
 }
 
 .subtitle {
@@ -135,34 +117,6 @@ h2 {
   align-items: center;
 }
 
-/*
- * Sempre defina explicitamente a altura do mapa para definir o tamanho do elemento div
- * que contém o mapa.
- */
- #map {
-  height: 400px;
-  width: 100%;
-}
-
-/*estilização para aparecer o botão de centralizar na localização do usuario google*/
-.custom-map-control-button {
-  background-color: #fff;
-  border: 0;
-  border-radius: 5px;
-  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
-  margin: 10px;
-  padding: 0 0.5em;
-  font: 400 18px Roboto, Arial, sans-serif;
-  overflow: hidden;
-  height: 40px;
-  cursor: pointer;
-}
-.custom-map-control-button:hover {
-  background: rgb(235, 235, 235);
-}
-
-/**/
-
 footer {
   /*desenha area do footer para se destacar do fundo */
   margin-left: 100px;
@@ -188,6 +142,23 @@ footer {
   background-color:rgba(128, 128, 128, 0.5);
 
 }
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
 
 
 /*Paleta Cores para elementos

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styleprototype3.css" />
-    <script src="./pagina3.js" async defer></script>
+    <!--Link para estilização e javascript da pagina-->
+    <link rel="stylesheet" href="/prototipo-pagina3/styleprototype3.css" />
+    <link rel="stylesheet" href="/prototipo-pagina3/style-lista.css" />
+    <script src="/prototipo-pagina3/pagina3.js" async defer></script>
+
 
     <!---Script para botão de centralizar na localização do usuario-->
     <script
@@ -25,14 +28,14 @@
 </script>
 
 
-    <title>Pagina 3</title>
+    <title>Compras na sua rota</title>
   </head>
 
   <body>
     <div class="back">
       <div class="titulo-principal">
         <h1>
-          <img src="./assets/edit_location_alt_svg.svg" class="titleimg" />
+          <img src="/assets/edit_location_alt_svg.svg" class="titleimg" />
           Guia completo para otimizar suas listas de compras
         </h1>
       </div>
@@ -45,7 +48,7 @@
             <li>Listas</li>
             <li>
               <img
-                src="./assets/logo.png"
+                src="/assets/logo-transparente.png"
                 alt="Logotipo do site"
                 width="60"
               />
@@ -70,7 +73,21 @@
         <div>
           #Quadro flutuante com botões: -Criar listas -Exibir listas -Excluir
           listas -Alterar listas
-        </div>
+
+          <!--APP-->
+          <div class="listas">
+            <input placeholder="Qual sua lista">
+            <button>Adicionar</button>
+            <ul>
+              <li>
+                <img src="/assets/checked.png" alt="lista-checada" class="img_style_lista">
+                <p>Arroz</p>
+                <img src="/assets/trash.png" alt="exluir-lista" class="img_style_lista">
+              </li>
+            </ul>
+
+          </div>
+
       </section>
 
       <section>
@@ -91,14 +108,38 @@
     </main>
 
     <footer>
-      <img src="#" alt="Logotipo do site: " />
-      <nav>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      </nav>
+      <div class="footer-margin"></div>
+
+      <div id="social-links">
+        <a
+          href="https://github.com/Leandrollobo/projeto-site-geolocalizacao.git"
+          target="_blank"
+        >
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a
+          href="https://pages.prozeducacao.com.br/proz-tecnologia"
+          target="_blank"
+        >
+          <img src="/assets/proz.png" alt="5px" width="28px" />
+        </a>
+        <a href="https://linkedin.com/in/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+
+      <center>
+      <p>Criado pelo Grupo 4 - <a href="https://pages.prozeducacao.com.br/proz-tecnologia">Curso Proz Educação</a>  - Projeto Final</a></p>
+      </center>
     </footer>
   </body>
 </html>

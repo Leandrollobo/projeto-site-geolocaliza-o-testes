@@ -112,7 +112,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, userLocation) {
   infoWindow.open(map);
 }
 
-/*TESTESSS
+/*TESTES
   infoWindow = new google.maps.InfoWindow();
 
   const locationButton = document.createElement("button");
@@ -166,6 +166,7 @@ window.initMap = initMap;
     position: position,
     title: "Compras na sua rota",
   });
-}*/
+}
+*/
 
 initMap();
