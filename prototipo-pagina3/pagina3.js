@@ -76,6 +76,10 @@ async function initMap() {
                 // Cria marcadores para os resultados da pesquisa
                 createMarker(results[i]);
               }
+
+              //TESTANDO MEU CODIGO//
+              console.log(results);
+              avisarUsuario(results);
             }
           }
 
@@ -110,6 +114,15 @@ function handleLocationError(browserHasGeolocation, infoWindow, userLocation) {
       : "Erro: Seu navegador não suporta geolocalização."
   );
   infoWindow.open(map);
+}
+
+function avisarUsuario(results) {
+  if (minhaLista.length > 0 && results.length > 0) {
+    alert("Aproveite para comprar o que precisa, tem supermercados proxímos");
+  } else {
+    console.log("Você não tem nenhuma lista de compras");
+    alert("Você esta livre, não precisa comprar nada!");
+  }
 }
 
 /*TESTES
